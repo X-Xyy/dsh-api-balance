@@ -1,0 +1,44 @@
+{
+  "name": "dsh-api-balance",
+  "version": "1.0.0",
+  "description": "Live DeepSeek API balance and per-session token usage in the conversation header.",
+  "type": "module",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek",
+    "harness",
+    "balance",
+    "usage",
+    "tokens"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X-Xyy/dsh-api-balance.git"
+  },
+  "homepage": "https://github.com/X-Xyy/dsh-api-balance#readme",
+  "bugs": {
+    "url": "https://github.com/X-Xyy/dsh-api-balance/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
